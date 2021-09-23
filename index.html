@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOI Ranking</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Hind:wght@700&family=Imprima&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand me-2" href="#!">
+                        2021 FOI RANKING
+                    </a>
+                <div class="d-flex align-items-center">
+                    <a class="nav-link px-3" href="#!">
+                            Methodology
+                        </a>
+                    <a class="nav-link px-3" href="#!">
+                            Methodology
+                        </a>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <h1 class="hind-text-700">
+                Exercising your right to Know
+            </h1>
+            <p class="glegoo-text-400">
+                Ranking of 213 MDAs base on their compliance to the freedom of information act (2011)
+            </p>
+            <div class="mt-5 d-flex align-items-center justify-content-between h-25 links">
+                <a class="btn header__btn" href="#ranking">view ranking</a>
+                <a class="dark-green-txt">Learn more</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="section--one container" id="ranking">
+            <h4 class="glegoo-text-700">MDA Ranking</h4>
+            <p class="glegoo-text-400">Ranking was conduction by a cohalition of civil society oranisation, PPDC, ICIR, Budgit, BRW, MRA and R2K</p>
+
+            <div class="table-responsive">
+                <table class="mt-5 table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name of Institution</th>
+                            <th scope="col">Points</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Proactive Disclosure</th>
+                            <th scope="col">Level of Disclosure </th>
+                            <th scope="col">Level of Responsiveness</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="mda-name">Burea of Public Procurement</th>
+                            <td>52</td>
+                            <td>1st</td>
+                            <td>53 points</td>
+                            <td>53 points</td>
+                            <td>53 points</td>
+                        </tr>
+                        <tr>
+                            <th class="mda-name">Burea of Public Procurement</th>
+                            <td>52</td>
+                            <td>1st</td>
+                            <td>53 points</td>
+                            <td>53 points</td>
+                            <td>53 points</td>
+                        </tr>
+                        <tr>
+                            <th class="mda-name">Burea of Public Procurement</th>
+                            <td>52</td>
+                            <td>1st</td>
+                            <td>53 points</td>
+                            <td>53 points</td>
+                            <td>53 points</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="h-25"></footer>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+:root {
+    --green-dark: #6F988E;
+    --green-light: #B8E7BD;
+    --green-lighter: #EBF3EC;
+    --font-hind: 'Hind', sans-serif;
+    --font-glegoo: 'Glegoo', serif;
+    --font-imprima: 'Imprima', sans-serif;
+}
+
+.glegoo-text-700 {
+    font-family: var(--font-glegoo);
+    font-weight: 700;
+}
+
+.glegoo-text-400 {
+    font-family: var(--font-glegoo);
+    font-weight: 400;
+}
+
+.hind-text-700 {
+    font-family: var(--font-hind);
+    font-weight: 700;
+}
+
+.hind-text-400 {
+    font-family: var(--font-hind);
+    font-weight: 400;
+}
+
+.dark-green-txt {
+    color: var(--green-dark);
+}
+
+html,
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    background-image: url('/images/header-bg.jpg');
+    background-size: 100vw 90vh;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    margin-top: 6rem;
+    font-size: 60px;
+    width: 40%;
+    color: #000;
+    line-height: 4rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 3rem;
+    font-size: 18px;
+    width: 40%;
+}
+
+header a:hover {
+    color: var(--green-light);
+}
+
+header .links {
+    width: 25%;
+}
+
+.navbar-brand {
+    color: var(--green-dark);
+    font-size: 18px;
+}
+
+.navbar {
+    box-shadow: none;
+    background-color: transparent;
+    font-family: var(--font-glegoo);
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.header__btn {
+    background-color: var(--green-light);
+    box-shadow: none;
+    text-transform: capitalize;
+    color: #000;
+    border-radius: 0;
+}
+
+table {
+    font-family: var(--font-glegoo)
+}
+
+table thead {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    font-weight: 700;
+}
+
+tbody {
+    font-weight: 400;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: var(--green-lighter);
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        width: 90%;
+    }
+    header p {
+        width: 90%;
+    }
+    header .links {
+        width: 60%;
+    }
+}
